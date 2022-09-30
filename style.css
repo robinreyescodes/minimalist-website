@@ -8,10 +8,11 @@
 html,
 body {
   height: 100%;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-  background: rgb(66, 66, 66);
+  overflow-x: hidden;
 }
 
 /* variables */
@@ -51,7 +52,24 @@ nav svg {
 }
 
 .links {
-  display: none;
+  position: absolute;
+  background: white;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transform: translateX(100%);
+  transition: transform 0.4s ease;
+}
+
+.links a {
+  color: var(--secondary-color);
+  font-size: 2rem;
+  text-decoration: none;
 }
 
 .logo {
@@ -114,4 +132,51 @@ nav svg {
   height: 100vh;
   object-fit: cover;
   z-index: -1;
+}
+
+/* classes page styling */
+.classes {
+  color: var(--secondary-color);
+  text-align: center;
+  font-family: "argonite", sans-serif;
+}
+
+video {
+  width: 100%;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+
+.video {
+  position: relative;
+}
+
+.videos h3 {
+  position: absolute;
+  color: var(--main-color);
+  text-shadow: 0px 2px 12px rgba(0, 0, 0, 0.532);
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 2rem;
+}
+
+/* about section */
+.about {
+  color: var(--secondary-color);
+}
+
+.about h2 {
+  font-family: "argonite", sans-serif;
+  text-align: center;
+}
+
+.about p {
+  line-height: 150%;
+  font-size: 1.2rem;
+}
+
+.about img {
+  width: 100%;
+  margin-top: 2rem;
 }
