@@ -49,6 +49,7 @@ nav {
 
 nav svg {
   cursor: pointer;
+  z-index: 10;
 }
 
 .links {
